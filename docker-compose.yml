@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  # PostgreSQL 数据库
+  postgres:
+    image: postgres:16
+    container_name: gameserver-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: gamedb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./sql/orleans_tables.sql:/docker-entrypoint-initdb.d/01-orleans_tables.sql
+      - ./sql/game_tables.sql:/docker-entrypoint-initdb.d/02-game_tables.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # Orleans Silo (可多实例)
+  silo:
+    build:
+      context: .
+      dockerfile: Dockerfile.Silo
+    container_name: gameserver-silo
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      ConnectionStrings__PostgreSQL: "Host=postgres;Port=5432;Database=gamedb;Username=postgres;Password=postgres"
+      Silo__ServiceId: "GameServer"
+      Silo__ClusterId: "GameServerCluster"
+      Silo__SiloPort: "11111"
+      Silo__GatewayPort: "30000"
+    ports:
+      - "11111:11111"
+      - "30000:30000"
+
+  # Gateway 网关 (可多实例)
+  gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile.Gateway
+    container_name: gameserver-gateway
+    depends_on:
+      postgres:
+        condition: service_healthy
+      silo:
+        condition: service_started
+    environment:
+      ConnectionStrings__PostgreSQL: "Host=postgres;Port=5432;Database=gamedb;Username=postgres;Password=postgres"
+      Orleans__ClusterId: "GameServerCluster"
+      Orleans__ServiceId: "GameServer"
+      Gateway__Port: "9001"
+      Gateway__Id: "1"
+      Gateway__HeartbeatTimeoutSeconds: "60"
+    ports:
+      - "9001:9001"
+
+volumes:
+  postgres_data:

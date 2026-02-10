@@ -1,0 +1,32 @@
+# GameSilo Dockerfile
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /source
+
+# 复制解决方案和项目文件
+COPY Directory.Build.props .
+COPY global.json .
+COPY GameServer.sln .
+COPY src/GameShared/GameShared.csproj src/GameShared/
+COPY src/GameGrainInterfaces/GameGrainInterfaces.csproj src/GameGrainInterfaces/
+COPY src/GameGrains/GameGrains.csproj src/GameGrains/
+COPY src/GameSilo/GameSilo.csproj src/GameSilo/
+COPY src/GameGateway/GameGateway.csproj src/GameGateway/
+
+# 还原依赖
+RUN dotnet restore src/GameSilo/GameSilo.csproj
+
+# 复制源代码并发布
+COPY src/ src/
+RUN dotnet publish src/GameSilo/GameSilo.csproj -c Release -o /app --no-restore
+
+# 运行时镜像
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+WORKDIR /app
+COPY --from=build /app .
+
+# Silo 端口
+EXPOSE 11111
+# Gateway 端口（Orleans 内部 Gateway）
+EXPOSE 30000
+
+ENTRYPOINT ["dotnet", "GameSilo.dll"]

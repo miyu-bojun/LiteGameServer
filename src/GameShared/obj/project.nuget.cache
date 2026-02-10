@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "MUx8gt8nbJg=",
+  "success": true,
+  "projectFilePath": "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameShared\\GameShared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chen\\.nuget\\packages\\memorypack\\1.21.4\\memorypack.1.21.4.nupkg.sha512",
+    "C:\\Users\\chen\\.nuget\\packages\\memorypack.core\\1.21.4\\memorypack.core.1.21.4.nupkg.sha512",
+    "C:\\Users\\chen\\.nuget\\packages\\memorypack.generator\\1.21.4\\memorypack.generator.1.21.4.nupkg.sha512"
+  ],
+  "logs": []
+}

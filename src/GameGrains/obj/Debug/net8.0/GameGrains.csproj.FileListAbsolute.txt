@@ -1,0 +1,17 @@
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\bin\Debug\net8.0\GameGrains.deps.json
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\bin\Debug\net8.0\GameGrains.dll
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\bin\Debug\net8.0\GameGrains.pdb
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\bin\Debug\net8.0\GameGrainInterfaces.dll
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\bin\Debug\net8.0\GameShared.dll
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\bin\Debug\net8.0\GameGrainInterfaces.pdb
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\bin\Debug\net8.0\GameShared.pdb
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\obj\Debug\net8.0\GameGrains.csproj.AssemblyReference.cache
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\obj\Debug\net8.0\GameGrains.GeneratedMSBuildEditorConfig.editorconfig
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\obj\Debug\net8.0\GameGrains.AssemblyInfoInputs.cache
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\obj\Debug\net8.0\GameGrains.AssemblyInfo.cs
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\obj\Debug\net8.0\GameGrains.csproj.CoreCompileInputs.cache
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\obj\Debug\net8.0\GameGrains.csproj.Up2Date
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\obj\Debug\net8.0\GameGrains.dll
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\obj\Debug\net8.0\refint\GameGrains.dll
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\obj\Debug\net8.0\GameGrains.pdb
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameGrains\obj\Debug\net8.0\ref\GameGrains.dll

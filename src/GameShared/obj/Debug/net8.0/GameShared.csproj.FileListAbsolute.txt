@@ -1,0 +1,12 @@
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameShared\bin\Debug\net8.0\GameShared.deps.json
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameShared\bin\Debug\net8.0\GameShared.dll
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameShared\bin\Debug\net8.0\GameShared.pdb
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameShared\obj\Debug\net8.0\GameShared.GeneratedMSBuildEditorConfig.editorconfig
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameShared\obj\Debug\net8.0\GameShared.AssemblyInfoInputs.cache
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameShared\obj\Debug\net8.0\GameShared.AssemblyInfo.cs
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameShared\obj\Debug\net8.0\GameShared.csproj.CoreCompileInputs.cache
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameShared\obj\Debug\net8.0\GameShared.dll
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameShared\obj\Debug\net8.0\refint\GameShared.dll
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameShared\obj\Debug\net8.0\GameShared.pdb
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameShared\obj\Debug\net8.0\ref\GameShared.dll
+D:\WorkSpace\CSharpSpace\LiteServer01\src\GameShared\obj\Debug\net8.0\GameShared.csproj.AssemblyReference.cache

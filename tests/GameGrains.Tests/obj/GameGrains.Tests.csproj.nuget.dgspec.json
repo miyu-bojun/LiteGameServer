@@ -1,0 +1,304 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\tests\\GameGrains.Tests\\GameGrains.Tests.csproj": {}
+  },
+  "projects": {
+    "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameGrainInterfaces\\GameGrainInterfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameGrainInterfaces\\GameGrainInterfaces.csproj",
+        "projectName": "GameGrainInterfaces",
+        "projectPath": "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameGrainInterfaces\\GameGrainInterfaces.csproj",
+        "packagesPath": "C:\\Users\\chen\\.nuget\\packages\\",
+        "outputPath": "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameGrainInterfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\chen\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameShared\\GameShared.csproj": {
+                "projectPath": "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameShared\\GameShared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Orleans.Core.Abstractions": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "Microsoft.Orleans.Sdk": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameGrains\\GameGrains.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameGrains\\GameGrains.csproj",
+        "projectName": "GameGrains",
+        "projectPath": "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameGrains\\GameGrains.csproj",
+        "packagesPath": "C:\\Users\\chen\\.nuget\\packages\\",
+        "outputPath": "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameGrains\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\chen\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameGrainInterfaces\\GameGrainInterfaces.csproj": {
+                "projectPath": "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameGrainInterfaces\\GameGrainInterfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Orleans.Persistence.AdoNet": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameShared\\GameShared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameShared\\GameShared.csproj",
+        "projectName": "GameShared",
+        "projectPath": "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameShared\\GameShared.csproj",
+        "packagesPath": "C:\\Users\\chen\\.nuget\\packages\\",
+        "outputPath": "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameShared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\chen\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MemoryPack": {
+              "target": "Package",
+              "version": "[1.21.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\tests\\GameGrains.Tests\\GameGrains.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\tests\\GameGrains.Tests\\GameGrains.Tests.csproj",
+        "projectName": "GameGrains.Tests",
+        "projectPath": "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\tests\\GameGrains.Tests\\GameGrains.Tests.csproj",
+        "packagesPath": "C:\\Users\\chen\\.nuget\\packages\\",
+        "outputPath": "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\tests\\GameGrains.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\chen\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameGrains\\GameGrains.csproj": {
+                "projectPath": "D:\\WorkSpace\\CSharpSpace\\LiteServer01\\src\\GameGrains\\GameGrains.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
